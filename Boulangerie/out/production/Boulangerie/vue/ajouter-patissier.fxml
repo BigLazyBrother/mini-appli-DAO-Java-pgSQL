@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="677.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2"  fx:controller="action.ControleurPatisserie">
+  <children>
+    <Label layoutX="47.0" layoutY="31.0" style="-fx-text-fill:blue;&#10;-fx-font-family: &quot;Segoe UI Semibold&quot;;" text="Ajouter un concepteur">
+      <font>
+        <Font name="System Bold" size="40.0" />
+      </font>
+    </Label>
+    <Pane layoutX="47.0" layoutY="106.0" prefHeight="524.0" prefWidth="510.0" style=" -fx-background-color: cornflowerblue;">
+      <children>
+        <VBox layoutX="25.0" layoutY="44.0" prefHeight="310.0" prefWidth="451.0">
+          <children>
+            <Label text="Nom" textFill="WHITE">
+              <font>
+                <Font name="System Bold" size="15.0" fx:id="x1" />
+              </font>
+            </Label>
+            <TextField id="champs-nom" prefWidth="200.0" />
+            <Label font="$x1" prefWidth="57.0" text="Courriel" textFill="WHITE" />
+            <TextField id="champs-courriel" prefWidth="200.0" />
+            <Label font="$x1" text="Âge" textFill="WHITE" />
+            <TextField id="champs-age" prefWidth="200.0" />
+            <Label font="$x1" text="Ville" textFill="WHITE" />
+            <TextField id="champs-ville" prefWidth="200.0" />
+            <Button mnemonicParsing="false" onAction="#notifierEnregistrerAjoutPatissier" prefWidth="174.0" style="-fx-background-color: blue; &#10;-fx-text-fill:white;&#10;-fx-font-family: &quot;Segoe UI Semibold&quot;;" text="Enregistrer" />
+          </children>
+        </VBox>
+      </children>
+    </Pane>
+  </children>
+</AnchorPane>
